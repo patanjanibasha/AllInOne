@@ -1,0 +1,36 @@
+package Collection;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+	
+		List li = new ArrayList<>();
+		li.add("D");
+		li.add("A");
+		li.add("B");
+		li.add("C");
+		li.add("A");
+		li.add("B");
+		li.add("C");
+		
+		System.out.println("size : "+li.size());
+		System.out.println("before sorting...");
+		for(Object s:li)
+		{
+			System.out.println(s);
+		}
+		
+		Collections.sort(li);
+		
+		System.out.println("after sorting...");
+		for(Object s:li)
+		{
+			System.out.println(s);
+		}
+	}
+
+}

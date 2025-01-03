@@ -1,0 +1,44 @@
+package com.jani.Selenium;
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class testNgAnnotations {
+	
+	@BeforeSuite
+	public void setUpSuite() {
+	    System.out.println("@BeforeSuite: Initializing test suite...");
+	}
+	
+	@BeforeTest
+	public void setUpTest() {
+	    System.out.println("@BeforeTest :Setting up test configurations...");
+	}
+
+	
+	@Test
+	public void logout()
+	{
+		 System.out.println("@Test : logout called...");
+	}
+	
+	@Test
+	public void login()
+	{
+		 System.out.println("@Test : login called...");
+	}
+	
+	@AfterTest
+	public void tearDownTest() {
+	    System.out.println("@AfterTest :Tearing down test configurations...");
+	}
+
+	@AfterSuite
+	public void tearDownSuite() {
+	    System.out.println("	@AfterSuite : Cleaning up after test suite execution...");
+	}
+
+}

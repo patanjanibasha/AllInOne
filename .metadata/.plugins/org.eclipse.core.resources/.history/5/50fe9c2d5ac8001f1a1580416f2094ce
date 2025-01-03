@@ -1,0 +1,16 @@
+package JavaCheck;
+
+public class ClassB {
+	
+	void C()
+	{
+		System.out.println("class b method calls C");
+	}
+	
+ClassA a1= new ClassA();
+	public static void main(String[] args) {
+		ClassA a1= new ClassA();
+
+	}
+
+}

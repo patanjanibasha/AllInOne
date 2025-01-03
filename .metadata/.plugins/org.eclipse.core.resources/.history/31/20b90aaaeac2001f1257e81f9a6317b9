@@ -1,0 +1,58 @@
+package com.mystoreapp.pageobjects;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.mystoreapp.actiondriver.MyAction;
+import com.mystoreapp.base.BaseClass;
+
+public class IndexPage extends BaseClass
+{
+
+	@FindBy(id="nav-link-accountList")
+	WebElement AcountsHover;
+	
+	@FindBy(xpath="//a[text() ='Sign in']")
+	WebElement signInLink;
+	
+	@FindBy(id="nav-logo-sprites")
+	WebElement amazonLogoImg;
+	
+	@FindBy(id="twotabsearchtextbox")
+	WebElement searchTextBox;
+
+	@FindBy(xpath="//input[@type='submit' and @value='Go']")
+	WebElement searchBtn;
+	
+	public IndexPage()
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	public LoginPage signIn()
+	{
+		MyAction.mouseover(driver, AcountsHover);
+		MyAction.click(driver, signInLink);
+		
+		return new LoginPage();
+	}
+	
+	public boolean logoClick()
+	{
+		return MyAction.isDisplayed(driver, amazonLogoImg);
+	}
+	
+	public String getMyAppStoreTitle()
+	{
+		String myStoreTitle = driver.getTitle();
+		return myStoreTitle;
+	}
+	
+	public SearchResultPage searchProduct(String productname)
+	{
+		MyAction.type(searchTextBox, productname);
+		MyAction.click(driver, searchBtn);
+		return new SearchResultPage();
+	}
+}

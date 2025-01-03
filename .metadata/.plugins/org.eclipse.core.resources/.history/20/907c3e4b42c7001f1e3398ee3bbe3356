@@ -1,0 +1,26 @@
+package JavaConcepts;
+
+public class Interfaces_ShapeDemo_Triangle implements Interfaces_ShapeDemo{
+
+	private double _base;
+	private double _height;
+	
+	Interfaces_ShapeDemo_Triangle(double base, double height)
+	{
+		this._base=base;
+		this._height=height;
+	}
+	
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void displayArea() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package com.mystoreapp.pageobjects;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.mystoreapp.actiondriver.UserAction;
+import com.mystoreapp.base.BaseClass;
+
+/**
+ * 
+ */
+public class LoginPage extends BaseClass
+{
+	@FindBy(name="Email")
+	WebElement emailFeild;
+	
+	@FindBy(name="Password")
+	WebElement passwordFeild;
+	
+	@FindBy(xpath="button[@type='submit']")
+	WebElement loginBtn;
+	
+	public LoginPage()
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	public HomePage login()
+	{
+		UserAction.type(emailFeild, prop.getProperty("username") );
+		UserAction.type(passwordFeild, prop.getProperty("password"));
+		UserAction.click(driver, loginBtn);
+		
+		return new HomePage();
+	}
+}

@@ -1,0 +1,14 @@
+package com.jani.LogicalQ;
+
+public class AddTwoNum {
+
+	public static void main(String[] args) {
+		
+		add(20,30);
+	}
+	
+	public static int add(int num1 , int num2)
+	{
+		return num1+num2;
+	}
+}

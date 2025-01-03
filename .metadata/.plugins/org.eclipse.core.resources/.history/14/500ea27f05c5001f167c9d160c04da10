@@ -1,0 +1,17 @@
+package com.jani.mavenslenium.com.jani.MyStoreApp;
+
+public class sampleChildA {
+
+	sampleParentA pA = new sampleParentA();
+	
+	public void TestA()
+	{
+		System.out.println("TestA called");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

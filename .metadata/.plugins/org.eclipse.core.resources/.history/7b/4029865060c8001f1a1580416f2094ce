@@ -1,0 +1,10 @@
+package JavaCheck;
+
+public class Demo2_ClassB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

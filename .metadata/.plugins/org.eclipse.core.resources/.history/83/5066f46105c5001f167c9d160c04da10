@@ -1,0 +1,10 @@
+package com.jani.mavenslenium.com.jani.MyStoreApp;
+
+public class sampleChildA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

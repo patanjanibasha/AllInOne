@@ -1,0 +1,16 @@
+package JavaCheck;
+public class ClassB {
+	void C()  {   System.out.println("class b method calls C");  }
+	
+	ClassA a1= new ClassA(); //classA cons called
+	ClassA a3= new ClassA(); //classA cons called
+	ClassB b = new ClassB();  // go class b and do all objects
+	public static void main(String[] args) {
+		ClassA a2= new ClassA(); //classA cons called
+		a2.B();					// classA method called
+		ClassA a3= new ClassA();  //classA cons called
+		ClassB b1 = new ClassB(); // go to class b and check any objects 
+		ClassB b2 = new ClassB(); // go to class b and check any objects 
+		b1.C();
+	}
+}

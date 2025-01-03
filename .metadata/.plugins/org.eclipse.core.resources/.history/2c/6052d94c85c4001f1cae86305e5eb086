@@ -1,0 +1,58 @@
+package com.mystoreapp.pageobjects;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.mystoreapp.actiondriver.Action;
+import com.mystoreapp.base.BaseClass;
+
+public class IndexPage extends BaseClass
+{
+
+	@FindBy(xpath="/a[@href='/login?returnUrl=%2F\']")
+	WebElement AcountsHover;
+	
+	@FindBy(xpath="//a[text() ='Log in']")
+	WebElement signInLink;
+	
+	@FindBy(xpath="//img[@alt ='nopCommerce demo store']")
+	WebElement amazonLogoImg;
+	
+	@FindBy(id="twotabsearchtextbox")
+	WebElement searchTextBox;
+
+	@FindBy(name="q")
+	WebElement searchBtn;
+	
+	public IndexPage()
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	public LoginPage signIn()
+	{
+		//UserAction.mouseover(driver, AcountsHover);
+		UserAction.click(driver, signInLink);
+		
+		return new LoginPage();
+	}
+	
+	public boolean logoClick()
+	{
+		return UserAction.isDisplayed(driver, amazonLogoImg);
+	}
+	
+	public String getMyAppStoreTitle()
+	{
+		String myStoreTitle = driver.getTitle();
+		return myStoreTitle;
+	}
+	
+	public SearchResultPage searchProduct(String productname)
+	{
+		UserAction.type(searchTextBox, productname);
+		UserAction.click(driver, searchBtn);
+		return new SearchResultPage();
+	}
+}

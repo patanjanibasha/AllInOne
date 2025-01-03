@@ -1,0 +1,10 @@
+package JavaConcepts;
+
+public class ShapeMainDemo {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

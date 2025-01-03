@@ -1,0 +1,14 @@
+package JavaConcepts;
+
+public class Inherce_Parent {
+
+	Inherce_Parent()
+	{
+		System.out.println("parent cons called");
+	}
+	
+	void m1()
+	{
+		System.out.println("parent m1 called");
+	}
+}

@@ -1,0 +1,16 @@
+package JavaConcepts;
+
+public abstract class Interface_Interface1 {
+
+	 abstract void m1();
+	
+}
+/** Interface
+ * ===============================
+ * 1. Interface methods must be have abstract keyword, if declare without abstract keyword java compiler ask u to write body of this method.
+ * 
+ *
+ *
+ *
+ *
+**/

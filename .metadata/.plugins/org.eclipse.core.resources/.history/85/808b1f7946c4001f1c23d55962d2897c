@@ -1,0 +1,12 @@
+package com.mystoreapp.testcases;
+
+import com.mystoreapp.base.BaseClass;
+
+public class IndexPageTestCase extends BaseClass
+{
+
+	public void setUp()
+	{
+		launchApp() ;
+	}
+}

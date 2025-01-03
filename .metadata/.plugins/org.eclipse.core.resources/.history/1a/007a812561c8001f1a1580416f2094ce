@@ -1,0 +1,19 @@
+package JavaCheck;
+
+public class Demo2_ClassB {
+	
+	void C()  
+	{   
+		System.out.println("class b method calls C");  
+	}
+	
+	Demo2_ClassA a1= new Demo2_ClassA(); //classA cons called
+	Demo2_ClassA a3= new Demo2_ClassA(); //classA cons called
+	
+	public static void main(String[] args) {
+		
+		Demo2_ClassB a22 = Demo2_ClassB();
+		a22.C();
+	}
+
+}

@@ -1,0 +1,14 @@
+package JavaCheck;
+
+public class ClassA {
+
+	ClassA()
+	{
+		System.out.println("classA cons called");
+	}
+	
+	void ClassA()
+	{
+		System.out.println("classA method called");
+	}
+}

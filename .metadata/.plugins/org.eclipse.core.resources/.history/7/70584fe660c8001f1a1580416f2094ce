@@ -1,0 +1,15 @@
+package JavaCheck;
+
+public class Demo2_ClassB {
+	
+	void C()  
+	{   
+		System.out.println("class b method calls C");  
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

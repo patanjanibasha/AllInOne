@@ -1,0 +1,16 @@
+package JavaConcepts;
+
+public class Interfaces_ShapeDemo_Circle implements Interfaces_ShapeDemo
+{
+
+	@Override
+	public double area() {
+		return 0;
+	}
+
+	@Override
+	public void displayArea() {
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.jani.Exceptions;
+
+public class Demo2_CheckedExceptions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
