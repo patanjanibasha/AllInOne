@@ -13,7 +13,7 @@ import com.mystoreapp.pageobjects.LoginPage;
 public class IndexPageTestCase extends BaseClass
 {
 	
-	IndexPage indexpage = new IndexPage();
+	IndexPage indexpage;
 	
 	
 	@BeforeMethod

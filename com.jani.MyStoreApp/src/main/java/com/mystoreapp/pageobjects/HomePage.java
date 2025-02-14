@@ -17,7 +17,7 @@ public class HomePage extends BaseClass
 {
 
 	
-	@FindBy(xpath="//span[text()='My wishlists']")
+	@FindBy(xpath="//span[text()='Add my first address']")
 	private WebElement myWishList;
 	
 	@FindBy(xpath = "//span[text()='Order history and details']")
@@ -28,7 +28,7 @@ public class HomePage extends BaseClass
 	}
 
 	
-	public boolean validateMyWishList() throws Throwable {
+	public boolean addMyFirstOrder() throws Throwable {
 		return Action.isDisplayed(driver, myWishList);
 	}
 	

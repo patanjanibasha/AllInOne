@@ -30,21 +30,18 @@ public class IndexPage extends BaseClass
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void signInClick()
+	public LoginPage signInClick()
 	{
 		try 
 		{
-	//	System.err.println("sign in before clicked...");
-	//	System.out.println(driver+"  "+signInLink);
 		Action.click(driver, signInLink);
-	//	System.err.println("sign in after clicked...");
 		}
 		catch(Exception e )
 		{
 			System.err.println(e);
 		}
 		
-		//return new LoginPage();
+		return new LoginPage();
 	
 	}
 	

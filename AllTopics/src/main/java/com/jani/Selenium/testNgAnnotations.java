@@ -14,14 +14,53 @@ public class testNgAnnotations {
 	
 	@BeforeSuite
 	public void setUpSuite() {
-	    System.out.println("@BeforeSuite: Initializing test suite...");
+	    System.out.println("@BeforeSuite 1 : setup system properties like config files ...");
+	}
+	
+	@BeforeSuite
+	public void setUpSuite2() {
+	    System.out.println("@BeforeSuite 2 : setup system properties like config files ...");
+	}
+	
+	@BeforeSuite
+	public void setUpSuite3() {
+	    System.out.println("@BeforeSuite 3 : setup system properties like config files ...");
+	}
+	
+	@BeforeSuite
+	public void setUpSuite4() {
+	    System.out.println("@BeforeSuite 4 : setup system properties like config files ...");
 	}
 	
 	@BeforeTest
 	public void setUpTest() {
-	    System.out.println("@BeforeTest :Setting up test configurations...");
+	    System.out.println("@BeforeTest 1:Setting up test configurations...");
+	}
+	
+	@BeforeTest
+	public void setUpTest2() {
+	    System.out.println("@BeforeTest 2:Setting up test configurations...");
+	}
+	@BeforeTest
+	public void setUpTest3() {
+	    System.out.println("@BeforeTest 3:Setting up test configurations...");
+	}
+	@BeforeTest
+	public void setUpTest4() {
+	    System.out.println("@BeforeTest 4:Setting up test configurations...");
 	}
 
+	
+
+	@BeforeClass
+	public void setUpClass() {
+	    System.out.println("@BeforeClass 1:Initializing resources for this class...");
+	}
+	
+	@BeforeMethod
+	public void setUpMethod() {
+	    System.out.println("@BeforeMethod 1:Setting up before each test method...");
+	}
 	
 	@Test
 	public void logout()
@@ -45,34 +84,22 @@ public class testNgAnnotations {
 	{
 		 System.out.println("@Test : m2");
 	}
-	@AfterTest
-	public void tearDownTest() {
-	    System.out.println("@AfterTest :Tearing down test configurations...");
-	}
-
-	@AfterSuite
-	public void tearDownSuite() {
-	    System.out.println("	@AfterSuite : Cleaning up after test suite execution...");
-	}
-
 	
-	@BeforeClass
-	public void setUpClass() {
-	    System.out.println("@BeforeClass :Initializing resources for this class...");
-	}
-	
-	@AfterClass
-	public void tearDownClass() {
-	    System.out.println("@AfterClass  : Cleaning up resources for this class...");
-	}
-
-	@BeforeMethod
-	public void setUpMethod() {
-	    System.out.println("@BeforeMethod :Setting up before each test method...");
-	}
 	@AfterMethod
 	public void tearDownMethod() {
-	    System.out.println("@AfterMethod :Cleaning up after each test method...");
+	    System.out.println("@AfterMethod 1:Cleaning up after each test method...");
+	}
+	@AfterClass
+	public void tearDownClass() {
+	    System.out.println("@AfterClass 1 : Cleaning up resources for this class...");
+	}
+	@AfterTest
+	public void tearDownTest() {
+	    System.out.println("@AfterTest 1:Tearing down test configurations...");
+	}
+	@AfterSuite
+	public void tearDownSuite() {
+	    System.out.println("	@AfterSuite 1: Cleaning up after test suite execution...");
 	}
 
 }

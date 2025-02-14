@@ -2,12 +2,18 @@ package com.jani.LogicalQ;
 
 public class Factorial {
 
-	public static int fact(int n)
+	public static int factorial(int n) 
 	{
-		return 0;
-		
-	}
+		if (n == 0 || n == 1) 
+		{ 
+            return 1;
+        }
+        return n * factorial(n - 1); 
+    
+    }
 	public static void main(String[] args) {
+		
+		// using for loop
 		int n=5;
 		int fact=1;
 
@@ -15,8 +21,9 @@ public class Factorial {
 		{
 			fact = fact*i;
 		}
+		System.out.println(" fact is using for loop : "+fact);
 		
-		System.out.println(" fact is : "+fact);
+		System.err.println("using recursion :"+factorial(4));
 	}
 
 	

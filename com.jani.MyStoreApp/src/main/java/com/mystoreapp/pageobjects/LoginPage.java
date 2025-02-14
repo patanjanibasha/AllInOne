@@ -37,12 +37,18 @@ public class LoginPage extends BaseClass
 
 	public HomePage login()
 	{
-		
 		Action.type(userName, prop.getProperty("username") );
 		Action.type(password, prop.getProperty("password"));
 		Action.click(driver, signInBtn);
 
 		return new HomePage();
+	}
+	
+	public AccountCreationPage AccountCreate(String newEmail)
+	{
+		Action.type(emailForNewAccount,newEmail);
+		Action.click(driver, createNewAccountBtn);
 		
+		return new AccountCreationPage();
 	}
 }

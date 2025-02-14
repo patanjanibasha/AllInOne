@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Janibasha\Desktop\GuruSelenium\PracticeCucumber\Features\login3senarioOutLineExamples.feature"/>
+			<item value="C:\Users\Janibasha\Desktop\GuruSelenium\AllTopics\src\main\java"/>
 			<item value="C:\Users\Janibasha\Desktop\GuruSelenium\com.jani.MyStoreApp"/>
 			<item value="C:\Users\Janibasha\Desktop\GuruSelenium\guruSir\target"/>
 		</list>
@@ -27,13 +29,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="jani.AllTopics"/>
 		</list>
 		<list key="groupId">
-			<item value="jani"/>
 		</list>
 		<list key="artifactId">
-			<item value="AllTopics"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

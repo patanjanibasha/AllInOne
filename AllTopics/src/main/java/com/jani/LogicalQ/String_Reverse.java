@@ -8,7 +8,7 @@ public class String_Reverse {
 		
 		StringBuilder sb = new StringBuilder(s);
 		
-		System.out.println(sb.reverse());
+		System.out.println("reverst is :"+sb.reverse());
 	}
 
 }

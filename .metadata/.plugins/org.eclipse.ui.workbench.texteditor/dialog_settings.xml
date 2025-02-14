@@ -6,4 +6,13 @@
 		<item value="checkbo"/>
 		<item value="tyep"/>
 	</list>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;"/>
+		<list key="findhistory">
+			<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;"/>
+			<item value="package TestNG;"/>
+			<item value="&#x09;@BeforeGroups({&quot;smoke&quot;, &quot;regression&quot;})"/>
+			<item value="&#x09;private final ConstructerFinalKeyword()"/>
+		</list>
+	</section>
 </section>

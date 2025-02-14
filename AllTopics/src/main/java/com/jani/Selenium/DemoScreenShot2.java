@@ -19,5 +19,4 @@ public class DemoScreenShot2 {
          File destFile = new File("C:\\Users\\Janibasha\\Desktop\\GuruSelenium\\AllTopics\\screenshot.png");
          FileUtils.copyFile(srcFile, destFile);
 	}
-
 }

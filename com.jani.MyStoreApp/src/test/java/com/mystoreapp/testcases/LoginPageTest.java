@@ -1,5 +1,6 @@
 package com.mystoreapp.testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -12,8 +13,8 @@ import com.mystoreapp.pageobjects.LoginPage;
 public class LoginPageTest extends BaseClass
 {
 	IndexPage indexpage;
-	
-	LoginPage loginpage = new LoginPage();
+	LoginPage loginpage;
+	HomePage homepage;
 	
 	@BeforeMethod
 	public void setUp()
@@ -26,42 +27,19 @@ public class LoginPageTest extends BaseClass
 	@AfterMethod
 	public void tearDown()
 	{
-		// driver.quit();
+		 driver.quit();
 		System.err.println("Browser Quited");
 	}
-	
-	HomePage homepage = new HomePage();
-	
+
 	@Test
 	public void loginTest() throws Throwable
 	{
 		indexpage.signInClick();
+		loginpage = new LoginPage();
+	    homepage = loginpage.login();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		// homepage = loginpage.login();
-		
-		//String actualResult = homepage.getCurrURL();
-		//System.out.println(actualResult);
-		///String expectedResult = "";
-		//Assert.assertEquals(actualResult,expectedResult);
+		String actualResult = homepage.getCurrURL();
+		String expectedResult = "http://www.automationpractice.pl/index.php?controller=my-account";
+		Assert.assertEquals(actualResult,expectedResult);
 	}
 }
